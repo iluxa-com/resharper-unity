@@ -1,10 +1,11 @@
-﻿using JetBrains.ReSharper.Psi.Parsing;
+﻿using JetBrains.Annotations;
+using JetBrains.ReSharper.Psi.Parsing;
 
-namespace JetBrains.ReSharper.Plugins.Unity.Psi.ShaderLab.Parsing
+namespace JetBrains.ReSharper.Plugins.Unity.Psi.Cg
 {
-    public class ShaderLabFilteringLexer : FilteringLexer, ILexer<int>
+    public class CgFilteringLexer : FilteringLexer, ILexer<int>
     {
-        public ShaderLabFilteringLexer(ILexer lexer)
+        public CgFilteringLexer([NotNull] ILexer lexer)
             : base(lexer)
         {
         }
